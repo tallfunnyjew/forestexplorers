@@ -98,7 +98,7 @@
 
     /* ─── HAMBURGER MENU ──────────────────────────────────── */
     .hamburger {
-      display: none;
+      display: none !important;
       flex-direction: column;
       background: transparent;
       border: none;
@@ -140,6 +140,11 @@
     .nav-links.mobile-open a {
       padding: .5rem 0;
       display: block;
+    }
+
+    @media (max-width: 960px) {
+      .hamburger { display: flex !important; }
+      .nav-links { display: none !important; }
     }
 
     /* ─── HERO ────────────────────────────────────────────────────── */
